@@ -1,0 +1,68 @@
+.navbar li a, .navbar .navbar-brand { 
+    color: black !important;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+  }
+  .navbar-nav li a:hover {
+    color: #979797 !important;
+  }
+  .navbar-nav li.active a {
+    color: #979797 !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+
+  #logo{
+    font-size: 50px;
+  }
+  .fa {
+    padding: 7px;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    text-decoration:none;
+  }
+  
+  .fa:hover {
+      opacity: 0.8;
+      color: #979797 !important;
+      text-decoration:none;
+  }
+  
+  .fa-facebook {
+    background: #000000;
+    color: white;
+  }
+  .fa-twitter {
+    background: #000000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #000000;
+    color: white;
+  }
+    /* Make the image fully responsive */
+    .carousel-inner img {
+        width: 1950px;
+        height: 750px;
+        object-fit: cover;
+      }
+      #demo{
+        background-color: #000000;
+      }
+    #footera {
+        color: #000000;
+    }
+    #footera :visited {
+        color: #000000;
+    }
+    #footera :hover{
+        color: #000000;
+        text-decoration: none;
+    }
