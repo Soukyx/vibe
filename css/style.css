@@ -16,6 +16,25 @@
   #logo{
     font-size: 50px;
   }
+  #car{
+    text-decoration: none;
+    color: #ededed !important;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #car:hover{
+    text-decoration: none;
+    color: white !important;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #cover{
+    background-color: #000000;
+    background-size: cover;
+    opacity: 0.75;
+    font-size: 20px;
+  }
+  #nav{
+    background-color: white;
+  }
   .fa {
     padding: 7px;
     font-size: 30px;
@@ -66,3 +85,15 @@
         color: #000000;
         text-decoration: none;
     }
+    body{
+      color: white;
+
+    }
+    #search {
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 2px solid black;
+    }
+    #search:focus {
+      outline : none;
+  }
