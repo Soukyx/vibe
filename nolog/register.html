@@ -2,7 +2,7 @@
 <html lang="cs" class="min-vh-100 m-0 p-0">
 <head>
 <meta charset="UTF-8">
-<title>VIBΞ - Login</title>
+<title>VIBΞ - Register</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="../css/login.css">
 <link rel="stylesheet" href="../css/dark-mode.css">
@@ -58,12 +58,16 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
 		<div class="row m-0 p-0 ">
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto m-0 p-0 ">
           <div class="card-body p-4 p-sm-5 m-0 p-0 ">
-            <h5 class="card-title text-center mb-5 fw-light fs-5">Sign In</h5>
+            <h5 class="card-title text-center mb-5 fw-light fs-5">Sign Up</h5>
             <div class="text-center text-black">
-            <p >Not registered yet? Sign up <a class="text-black" href="register.html">here.</a></p>
-
-            </div>
+                <p >Registered already? Sign in <a class="text-black" href="login.html">here.</a></p>
+    
+                </div>
             <form>
+                <div class="form-floating mb-3 ">
+                    <input type="text" class="form-control bg-light text-black border-bottom border-dark" id="floatingInput" placeholder="name">
+                    <label for="floatingInput">Name</label>
+                  </div>
               <div class="form-floating mb-3 ">
                 <input type="email" class="form-control bg-light text-black border-bottom border-dark" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">Email address</label>
@@ -72,16 +76,15 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
                 <input type="password" class="form-control bg-light text-black border-bottom border-dark" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword">Password</label>
               </div>
-
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control bg-light text-black border-bottom border-dark" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Confirm Password</label>
+              </div>
               <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
-                <label class="form-check-label" for="rememberPasswordCheck">
-                  Remember password
-                </label>
               </div>
               <div class="d-grid">
                 <button class="btn btn-primary btn-login text-uppercase fw-bold bg-black text-white border-0 col-md-3 justify-content-center" type="submit">Sign
-                  in</button>
+                  up</button>
               </div>
               <hr class="my-4">
             </form>
@@ -89,72 +92,72 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
       </div>
     </div>
 	</div>
-    <!-- Footer -->
+   <!-- Footer -->
 <footer class="page-footer font-small teal pt-4 bg-white">
 
-  <!-- Footer Text -->
-  <div class="container-fluid text-center text-md-left">
-
-    <!-- Grid row -->
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-md-4 mt-md-0 mt-3 text-center">
-
-        <!-- Content -->
-        <h3 class="text-uppercase font-weight-bold">What we offer?</h3>
-        <p>Collection of song lyrics and musical knowledge.</p>
-
-      </div>
-      <!-- Grid column -->
-      <div class="col-md-4 mb-md-0 mb-3 text-center">
-
-        <!-- Content -->
-        <h3 class="text-uppercase font-weight-bold">contact us</h3>
-        <div class="row">
-          <div class="text-center col-sm">
-               <i class="fas fa-map-marker-alt mt-4 fa-2x"></i>
-                    <p>Teplice, CZ</p>
-                
+    <!-- Footer Text -->
+    <div class="container-fluid text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-4 mt-md-0 mt-3 text-center">
+  
+          <!-- Content -->
+          <h3 class="text-uppercase font-weight-bold">What we offer?</h3>
+          <p>Collection of song lyrics and musical knowledge.</p>
+  
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-4 mb-md-0 mb-3 text-center">
+  
+          <!-- Content -->
+          <h3 class="text-uppercase font-weight-bold">contact us</h3>
+          <div class="row">
+            <div class="text-center col-sm">
+                 <i class="fas fa-map-marker-alt mt-4 fa-2x"></i>
+                      <p>Teplice, CZ</p>
+                  
+            </div>
+            <div class="text-center col-sm">
+                  <i class="fas fa-phone mt-4 fa-2x"></i>
+                      <p>666 172 852</p>
+                  
           </div>
           <div class="text-center col-sm">
-                <i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>666 172 852</p>
-                
+                  <i class="fas fa-envelope mt-4 fa-2x"></i>
+                      <p>vibemusic@seznam.cz</p>
+                  
+          </div>
+          </div>
+  
         </div>
-        <div class="text-center col-sm">
-                <i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>vibemusic@seznam.cz</p>
-                
+        <!-- Grid column -->
+        <div class="col-md-4 mb-md-0 mb-3 text-center">
+  
+          <!-- Content -->
+          <h3 class="text-uppercase font-weight-bold">Socials</h3>
+          <h4 href="#" class="fa fa-facebook bg-black text-white" ></h4>
+          <h4 href="#" class="fa fa-twitter bg-black text-white"></h4>
+          <h4 href="#" class="fa fa-instagram bg-black text-white"></h4>
+  
         </div>
-        </div>
-
+        <!-- Grid column -->
+  
       </div>
-      <!-- Grid column -->
-      <div class="col-md-4 mb-md-0 mb-3 text-center">
-
-        <!-- Content -->
-        <h3 class="text-uppercase font-weight-bold">Socials</h3>
-        <h4 href="#" class="fa fa-facebook bg-black text-white" ></h4>
-        <h4 href="#" class="fa fa-twitter bg-black text-white"></h4>
-        <h4 href="#" class="fa fa-instagram bg-black text-white"></h4>
-
-      </div>
-      <!-- Grid column -->
-
+      <!-- Grid row -->
+  
     </div>
-    <!-- Grid row -->
-
-  </div>
-  <!-- Footer Text -->
-
-  <!-- Copyright -->
-  <div id="footera" class="footer-copyright text-center py-3 text-black">© 2022 Copyright:
-    <a href="https://github.com/Soukyx" class="text-black">Soukyx</a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
+    <!-- Footer Text -->
+  
+    <!-- Copyright -->
+    <div id="footera" class="footer-copyright text-center py-3 text-black">© 2022 Copyright:
+      <a href="https://github.com/Soukyx" class="text-black">Soukyx</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
 </body>
 </html>
