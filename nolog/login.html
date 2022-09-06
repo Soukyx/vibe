@@ -1,93 +1,90 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="cs" class="min-vh-100 m-0 p-0">
 <head>
 <meta charset="UTF-8">
 <title>VIBΞ - homepage</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="../css/login.css">
+<link rel="stylesheet" href="../css/dark-mode.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://kit.fontawesome.com/da437b991a.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
+
+<!-- IE 11 polyfill for CSS and Custom Properties -->
+<script
+nomodule>window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5/css/bootstrap-ie11.min.css"><script src="https://cdn.jsdelivr.net/npm/ie11-custom-properties@4/ie11CustomProperties.min.js"><\/script>');</script>
+
   </head>
-<body>
-    <nav class="navbar navbar-expand-md navbar-dark">
-        <!--logo stranky=odkaz na homepage-->
-        <a id="logo" class="navbar-brand navbar-nav" href="index.html">
-            VIBΞ</a>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-              <!--navbar a collapse pri zmenseni stranky-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-xl-end" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item" id="review">
-            <input type="text" placeholder="Search.." name="search">
-            <a href="#"><i class="fa fa-search" href="#"></i></a>
-          </li>
-          <li class="nav-item " id="login">
-            <a href="login.html"><i class="fa fa-thin fa-user" href="login.html"></i></a>
-          </li>
-        </ul>
-        </div>
-      </nav>
+<body class="bg-white">
+  <nav id="nav" class="navbar navbar-expand-md navbar-dark bg-white">
+    <!--logo stranky=odkaz na homepage-->
+    <a id="logo" class="navbar-brand navbar-nav text-black" href="index.html">
+        VIBΞ</a>
+        <a href="#" class="fa fa-facebook text-white bg-black"></a>
+        <a href="#" class="fa fa-twitter text-white bg-black"></a>
+        <a href="#" class="fa fa-instagram text-white bg-black"></a>
+          <!--navbar a collapse pri zmenseni stranky-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-xl-end" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item" id="review">
+        <input class="bg-white text-black border-bottom border-dark" id="search" type="text" placeholder="Search.." name="search">
+        <a href="#"><i class="fa fa-search text-black" href="#"></i></a>
+      </li>
+      <li class="nav-item " id="login">
+        <a href="login.html"><i class="fa fa-thin fa-user text-black" href="login.html"></i></a>
+      </li>
+        <li class="nav-item form-check form-switch " id="switch">
+        <input type="checkbox" class="form-check-input" id="darkSwitch">
+        </li>
+      <script src="../dark-mode-switch.min.js"></script>
+
+    </div>
+
+    </ul>
+    </div>
+  </nav>
       
 
-	<div class="section">
-		<div class="container">
-			<div class="row full-height justify-content-center">
-				<div class="col-12 text-center align-self-center py-5">
-					<div class="section pb-5 pt-5 pt-sm-2 text-center">
-						<h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
-			          	<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
-			          	<label for="reg-log"></label>
-						<div class="card-3d-wrap mx-auto">
-							<div class="card-3d-wrapper">
-								<div class="card-front">
-									<div class="center-wrap">
-										<div class="section text-center">
-											<h4 class="mb-4 pb-3">Log In</h4>
-											<div class="form-group">
-												<input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
-											</div>	
-											<div class="form-group mt-2">
-												<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
-											</div>
-											<a href="#" class="btn mt-4">submit</a>
-                            				<p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
-				      					</div>
-			      					</div>
-			      				</div>
-								<div class="card-back">
-									<div class="center-wrap">
-										<div class="section text-center">
-											<h4 class="mb-4 pb-3">Sign Up</h4>
-											<div class="form-group">
-												<input type="text" name="logname" class="form-style" placeholder="Your Full Name" id="logname" autocomplete="off">
-											</div>	
-											<div class="form-group mt-2">
-												<input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
-											</div>	
-											<div class="form-group mt-2">
-												<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
-											</div>
-											<a href="#" class="btn mt-4">submit</a>
-				      					</div>
-			      					</div>
-			      				</div>
-			      			</div>
-			      		</div>
-			      	</div>
-		      	</div>
-	      	</div>
-	    </div>
+	<div class="section bg-white h-100 min-vh-100 m-0 p-0 bg-light" >
+		<div class="row m-0 p-0 ">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto m-0 p-0 ">
+          <div class="card-body p-4 p-sm-5 m-0 p-0 ">
+            <h5 class="card-title text-center mb-5 fw-light fs-5">Sign In</h5>
+            <form>
+              <div class="form-floating mb-3 ">
+                <input type="email" class="form-control bg-light text-black border-bottom border-dark" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control bg-light text-black border-bottom border-dark" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
+                <label class="form-check-label" for="rememberPasswordCheck">
+                  Remember password
+                </label>
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-primary btn-login text-uppercase fw-bold bg-black text-white border-0 col-md-3 justify-content-center" type="submit">Sign
+                  in</button>
+              </div>
+              <hr class="my-4">
+            </form>
+          </div>
+      </div>
+    </div>
 	</div>
-          <!-- Footer -->
-<footer class="page-footer font-small teal pt-4">
+   <!-- Footer -->
+   <footer class="page-footer font-small teal pt-4 bg-white">
 
     <!-- Footer Text -->
     <div class="container-fluid text-center text-md-left">
@@ -96,13 +93,11 @@
       <div class="row">
   
         <!-- Grid column -->
-        <div class="col-md-6 mt-md-0 mt-3">
+        <div class="col-md-6 mt-md-0 mt-3 text-right float-end float-right">
   
           <!-- Content -->
-          <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
-            repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
-            harum esse fugiat. Itaque, culpa?</p>
+          <h3 class="text-uppercase font-weight-bold">What we offer?</h3>
+          <h4>Collection of song lyrics and musical knowledge.</h4>
   
         </div>
         <!-- Grid column -->
@@ -110,13 +105,13 @@
         <hr class="clearfix w-100 d-md-none pb-3">
   
         <!-- Grid column -->
-        <div class="col-md-6 mb-md-0 mb-3">
+        <div class="col-md-6 mb-md-0 mb-6 text-left float-start float-left">
   
           <!-- Content -->
-          <h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
-            commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
-            excepturi hic.</p>
+          <h3 class="text-uppercase font-weight-bold">Socials</h3>
+          <h4 href="#" class="fa fa-facebook bg-black text-white" ></h4>
+          <h4 href="#" class="fa fa-twitter bg-black text-white"></h4>
+          <h4 href="#" class="fa fa-instagram bg-black text-white"></h4>
   
         </div>
         <!-- Grid column -->
@@ -128,8 +123,8 @@
     <!-- Footer Text -->
   
     <!-- Copyright -->
-    <div id="footera" class="footer-copyright text-center py-3">© 2022 Copyright:
-      <a href="https://github.com/Soukyx">Soukyx</a>
+    <div id="footera" class="footer-copyright text-center py-3 text-black">© 2022 Copyright:
+      <a href="https://github.com/Soukyx" class="text-black">Soukyx</a>
     </div>
     <!-- Copyright -->
   

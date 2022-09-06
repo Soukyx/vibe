@@ -5,20 +5,28 @@
 <title>VIBΞ - homepage</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/dark-mode.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://kit.fontawesome.com/da437b991a.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
+
+<!-- IE 11 polyfill for CSS and Custom Properties -->
+<script
+nomodule>window.MSInputMethodContext && document.documentMode && document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-ie11@5/css/bootstrap-ie11.min.css"><script src="https://cdn.jsdelivr.net/npm/ie11-custom-properties@4/ie11CustomProperties.min.js"><\/script>');</script>
+
   </head>
-<body>
-    <nav id="nav" class="navbar fixed-top navbar-expand-md navbar-dark">
+<body class="bg-white">
+    <nav id="nav" class="navbar navbar-expand-md navbar-dark bg-white">
         <!--logo stranky=odkaz na homepage-->
-        <a id="logo" class="navbar-brand navbar-nav" href="index.html">
+        <a id="logo" class="navbar-brand navbar-nav text-black" href="index.html">
             VIBΞ</a>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook text-white bg-black"></a>
+            <a href="#" class="fa fa-twitter text-white bg-black"></a>
+            <a href="#" class="fa fa-instagram text-white bg-black"></a>
               <!--navbar a collapse pri zmenseni stranky-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -26,16 +34,26 @@
         <div class="collapse navbar-collapse justify-content-xl-end" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item" id="review">
-            <input id="search" type="text" placeholder="Search.." name="search">
-            <a href="#"><i class="fa fa-search" href="#"></i></a>
+            <input class="bg-white text-black border-bottom border-dark" id="search" type="text" placeholder="Search.." name="search">
+            <a href="#"><i class="fa fa-search text-black" href="#"></i></a>
           </li>
           <li class="nav-item " id="login">
-            <a href="login.html"><i class="fa fa-thin fa-user" href="login.html"></i></a>
+            <a href="login.html"><i class="fa fa-thin fa-user text-black" href="login.html"></i></a>
           </li>
+            <li class="nav-item form-check form-switch " id="switch">
+            <input type="checkbox" class="form-check-input" id="darkSwitch">
+            </li>
+          <script src="../dark-mode-switch.min.js"></script>
+
+        </div>
+
         </ul>
         </div>
       </nav>
-      
+      <div>
+      <div class="text-center col-md-16 m-0 p-0 bg-black text-white" id="ah1">
+          <h2>BRAND NEW ARTICLES</h2>
+      </div>
       <div id="demo" class="carousel slide text-center" data-ride="carousel">
 
         <!-- Indicators -->
@@ -46,18 +64,18 @@
         </ul>
         
         <!-- The slideshow -->
-        <div class="carousel-inner">
+        <div class="carousel-inner" width="1100" height="400px">
           <div class="carousel-item active">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Bring-Me-The-Horizon.jpg/800px-Bring-Me-The-Horizon.jpg" alt="Los Angeles" width="1100" height="500">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Bring-Me-The-Horizon.jpg/800px-Bring-Me-The-Horizon.jpg" alt="Los Angeles">
           <div id="cover" class="carousel-caption"><a id="car" href="#">Bring Me the Horizon's founding members came from diverse musical backgrounds within metal and rock. </a></div>
           </div>
           <div class="carousel-item">
-            <img src="http://www.monstermusic.cz/wp-content/uploads/2019/12/ghostemane-744610290-1000x584.jpeg" alt="Chicago" width="1100" height="500">
+            <img src="http://www.monstermusic.cz/wp-content/uploads/2019/12/ghostemane-744610290-1000x584.jpeg" alt="Chicago">
             <div id="cover" class="carousel-caption"><a id="car" href="#">American rapper, singer, and songwriter.</a></div>
           
           </div>
           <div class="carousel-item">
-            <img src="https://i.ytimg.com/vi/kBpdV076p-g/maxresdefault.jpg" alt="New York" width="1100" height="500">
+            <img src="https://i.ytimg.com/vi/kBpdV076p-g/maxresdefault.jpg" alt="New York">
             <div id="cover" class="carousel-caption"><a id="car" href="#">REDZED ALBUM OUT NOW!!</a></div>
 
           </div>
@@ -71,8 +89,9 @@
           <span class="carousel-control-next-icon"></span>
         </a>
       </div>
+      </div>
       <!-- Footer -->
-<footer class="page-footer font-small teal pt-4">
+<footer class="page-footer font-small teal pt-4 bg-white">
 
   <!-- Footer Text -->
   <div class="container-fluid text-center text-md-left">
@@ -81,13 +100,11 @@
     <div class="row">
 
       <!-- Grid column -->
-      <div class="col-md-6 mt-md-0 mt-3">
+      <div class="col-md-6 mt-md-0 mt-3 text-right float-end float-right">
 
         <!-- Content -->
-        <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
-          repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
-          harum esse fugiat. Itaque, culpa?</p>
+        <h3 class="text-uppercase font-weight-bold">What we offer?</h3>
+        <h4>Collection of song lyrics and musical knowledge.</h4>
 
       </div>
       <!-- Grid column -->
@@ -95,13 +112,13 @@
       <hr class="clearfix w-100 d-md-none pb-3">
 
       <!-- Grid column -->
-      <div class="col-md-6 mb-md-0 mb-3">
+      <div class="col-md-6 mb-md-0 mb-6 text-left float-start float-left">
 
         <!-- Content -->
-        <h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
-          commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
-          excepturi hic.</p>
+        <h3 class="text-uppercase font-weight-bold">Socials</h3>
+        <h4 href="#" class="fa fa-facebook bg-black text-white" ></h4>
+        <h4 href="#" class="fa fa-twitter bg-black text-white"></h4>
+        <h4 href="#" class="fa fa-instagram bg-black text-white"></h4>
 
       </div>
       <!-- Grid column -->
@@ -113,8 +130,8 @@
   <!-- Footer Text -->
 
   <!-- Copyright -->
-  <div id="footera" class="footer-copyright text-center py-3">© 2022 Copyright:
-    <a href="https://github.com/Soukyx">Soukyx</a>
+  <div id="footera" class="footer-copyright text-center py-3 text-black">© 2022 Copyright:
+    <a href="https://github.com/Soukyx" class="text-black">Soukyx</a>
   </div>
   <!-- Copyright -->
 
