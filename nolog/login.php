@@ -23,7 +23,7 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
   
   <nav id="nav" class="navbar navbar-expand-md navbar-dark bg-white">
     <!--logo stranky=odkaz na homepage-->
-    <a id="logo" class="navbar-brand navbar-nav text-black" href="index.html">
+    <a id="logo" class="navbar-brand navbar-nav text-black" href="index.php">
         VIBΞ</a>
         <a href="#" class="fa fa-facebook text-white bg-black"></a>
         <a href="#" class="fa fa-twitter text-white bg-black"></a>
@@ -39,7 +39,7 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
         <a href="#"><i class="fa fa-search text-black" href="#"></i></a>
       </li>
       <li class="nav-item " id="login">
-        <a href="login.html"><i class="fa fa-thin fa-user text-black" href="login.html"></i></a>
+        <a href="login.php"><i class="fa fa-thin fa-user text-black" href="login.php"></i></a>
       </li>
 
 
@@ -60,16 +60,16 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
           <div class="card-body p-4 p-sm-5 m-0 p-0 ">
             <h5 class="card-title text-center mb-5 fw-light fs-5">Sign In</h5>
             <div class="text-center text-black">
-            <p >Not registered yet? Sign up <a class="text-black" href="register.html">here.</a></p>
+            <p >Not registered yet? Sign up <a class="text-black" href="register.php">here.</a></p>
 
             </div>
-            <form>
+            <form action="../backend/login.php" class="form-signin" method="post">
               <div class="form-floating mb-3 ">
-                <input type="email" class="form-control bg-light text-black border-bottom border-dark" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
+                <input name="username" type="text" class="form-control bg-light text-black border-bottom border-dark" id="floatingInput" placeholder="Name">
+                <label for="floatingInput">Name</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="password" class="form-control bg-light text-black border-bottom border-dark" id="floatingPassword" placeholder="Password">
+                <input name="password" type="password" class="form-control bg-light text-black border-bottom border-dark" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword">Password</label>
               </div>
 
@@ -80,7 +80,14 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
                 </label>
               </div>
               <div class="d-grid">
-                <button class="btn btn-primary btn-login text-uppercase fw-bold bg-black text-white border-0 col-md-3 justify-content-center" type="submit">Sign
+              <div class="col-md-12 text-center">
+              <?php
+              if (isset($_GET['error']) == true) {
+                echo '<p>Wrong Name or Password.</p>';
+              }
+              ?>
+            </div>
+                <button type="submit" class="btn btn-primary btn-login text-uppercase fw-bold bg-black text-white border-0 col-md-3 justify-content-center" type="submit">Sign
                   in</button>
               </div>
               <hr class="my-4">

@@ -23,7 +23,7 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
   
   <nav id="nav" class="navbar navbar-expand-md navbar-dark bg-white">
     <!--logo stranky=odkaz na homepage-->
-    <a id="logo" class="navbar-brand navbar-nav text-black" href="index.html">
+    <a id="logo" class="navbar-brand navbar-nav text-black" href="index.php">
         VIBΞ</a>
         <a href="#" class="fa fa-facebook text-white bg-black"></a>
         <a href="#" class="fa fa-twitter text-white bg-black"></a>
@@ -39,7 +39,7 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
         <a href="#"><i class="fa fa-search text-black" href="#"></i></a>
       </li>
       <li class="nav-item " id="login">
-        <a href="login.html"><i class="fa fa-thin fa-user text-black" href="login.html"></i></a>
+        <a href="login.php"><i class="fa fa-thin fa-user text-black" href="login.php"></i></a>
       </li>
 
 
@@ -60,30 +60,37 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
           <div class="card-body p-4 p-sm-5 m-0 p-0 ">
             <h5 class="card-title text-center mb-5 fw-light fs-5">Sign Up</h5>
             <div class="text-center text-black">
-                <p >Registered already? Sign in <a class="text-black" href="login.html">here.</a></p>
+                <p >Registered already? Sign in <a class="text-black" href="login.php">here.</a></p>
     
                 </div>
-            <form>
+            <form action="../backend/register.php" method="post" class="form-signin" enctype="multipart/form-data">
                 <div class="form-floating mb-3 ">
-                    <input type="text" class="form-control bg-light text-black border-bottom border-dark" id="floatingInput" placeholder="name">
+                    <input name="username" type="text" class="form-control bg-light text-black border-bottom border-dark" id="floatingInput" placeholder="name">
                     <label for="floatingInput">Name</label>
                   </div>
               <div class="form-floating mb-3 ">
-                <input type="email" class="form-control bg-light text-black border-bottom border-dark" id="floatingInput" placeholder="name@example.com">
+                <input name="email" type="email" class="form-control bg-light text-black border-bottom border-dark" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">Email address</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="password" class="form-control bg-light text-black border-bottom border-dark" id="floatingPassword" placeholder="Password">
+                <input name="password" type="password" class="form-control bg-light text-black border-bottom border-dark" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword">Password</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="password" class="form-control bg-light text-black border-bottom border-dark" id="floatingPassword" placeholder="Password">
+                <input name="cpassword" type="password" class="form-control bg-light text-black border-bottom border-dark" id="floatingPassword" placeholder="Password">
                 <label for="floatingPassword">Confirm Password</label>
               </div>
               <div class="form-check mb-3">
               </div>
               <div class="d-grid">
-                <button class="btn btn-primary btn-login text-uppercase fw-bold bg-black text-white border-0 col-md-3 justify-content-center" type="submit">Sign
+              <div class="col-md-12 text-center">
+                  <?php
+                  if (isset($_GET['error']) == true) {
+                    echo '<p>Incorrct values.</p>';
+                  }
+                  ?>
+                </div>
+                <button type="submit" class="btn btn-primary btn-login text-uppercase fw-bold bg-black text-white border-0 col-md-3 justify-content-center" type="submit">Sign
                   up</button>
               </div>
               <hr class="my-4">
@@ -92,6 +99,7 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
       </div>
     </div>
 	</div>
+  
    <!-- Footer -->
 <footer class="page-footer font-small teal pt-4 bg-white">
 

@@ -22,7 +22,7 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
 <body class="bg-white">
     <nav id="nav" class="navbar navbar-expand-md navbar-dark bg-white">
         <!--logo stranky=odkaz na homepage-->
-        <a id="logo" class="navbar-brand navbar-nav text-black" href="index.html">
+        <a id="logo" class="navbar-brand navbar-nav text-black" href="index.php">
             VIBΞ</a>
             <a href="#" class="fa fa-facebook text-white bg-black"></a>
             <a href="#" class="fa fa-twitter text-white bg-black"></a>
@@ -38,7 +38,7 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
             <a href="#"><i class="fa fa-search text-black" href="#"></i></a>
           </li>
           <li class="nav-item " id="login">
-            <a href="login.html"><i class="fa fa-thin fa-user text-black" href="login.html"></i></a>
+            <a href="login.php"><i class="fa fa-thin fa-user text-black" href="login.php"></i></a>
           </li>
 
         </div>
