@@ -106,6 +106,33 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
                                              </div>
                                                 </div>
                                             </div>
+                                            <form class="navbar-form navbar-right col-md-12" action="searchresults.php" method="GET">
+
+              <div class="search-area">
+                <div class="form-group">
+
+                  <div class="search-wrap">
+
+                    <label for="searchbox" class="sr-only">Search:</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control col-md-12" name="searchbox" id="searchbox" placeholder="Search users" required autocomplete="off">
+                      <div class="input-group-append">
+                        <button class="btn btn-secondary" name="search" value="Search" type="submit">
+                          <i id="sb" class="fa fa-search"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div id="searchresult" class="search-results hide"></div>
+
+
+                  </div>
+
+
+                </div>
+              </div>
+              <br>
+            </form>
       <!-- Footer -->
 <footer class="page-footer font-small teal pt-4 bg-white">
 
