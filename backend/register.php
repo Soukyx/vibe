@@ -32,7 +32,7 @@ if (
    } else {
 
                // Insert into Database  
-               $user_id = random_num(188);
+               $user_id = rand(10,188);
                $query = "insert into users (user_id,username, email, password) values ('$user_id','$username','$email','$password')";
 
                mysqli_query($con, $query);

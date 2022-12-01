@@ -2,7 +2,7 @@
 <html lang="cs" class="min-vh-100 m-0 p-0">
 <head>
 <meta charset="UTF-8">
-<title>THE CLOTHΞS - Login</title>
+<title>THECLOTHΞS - Login</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="../css/login.css">
 <link rel="stylesheet" href="../css/dark-mode.css">
@@ -23,13 +23,8 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
   
   <nav id="nav" class="navbar navbar-expand-md navbar-dark bg-white">
     <!--logo stranky=odkaz na homepage-->
-<<<<<<< HEAD:nolog/login.php
     <a id="logo" class="navbar-brand navbar-nav text-black" href="index.php">
-    THE CLOTHΞS</a>
-=======
-    <a id="logo" class="navbar-brand navbar-nav text-black" href="index.html">
-      THE CLOTHΞS</a>
->>>>>>> c0035feef5bd1f50f361abc613e391c6d40a671b:nolog/login.html
+    THECLOTHΞS</a>
         <a href="#" class="fa fa-facebook text-white bg-black"></a>
         <a href="#" class="fa fa-twitter text-white bg-black"></a>
         <a href="#" class="fa fa-instagram text-white bg-black"></a>
@@ -136,7 +131,7 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
         </div>
         <div class="text-center col-sm">
                 <i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>theclothes@seznam.cz</p>
+                    <p>THECLOTHΞS@seznam.cz</p>
                 
         </div>
         </div>

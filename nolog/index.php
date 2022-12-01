@@ -2,7 +2,7 @@
 <html lang="cs">
 <head>
 <meta charset="UTF-8">
-<title>THE CLOTHΞS - homepage</title>
+<title> THECLOTHΞS - homepage</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/dark-mode.css">
@@ -22,13 +22,8 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
 <body class="bg-white">
     <nav id="nav" class="navbar navbar-expand-md navbar-dark bg-white">
         <!--logo stranky=odkaz na homepage-->
-<<<<<<< HEAD:nolog/index.php
         <a id="logo" class="navbar-brand navbar-nav text-black" href="index.php">
-            VIBΞ</a>
-=======
-        <a id="logo" class="navbar-brand navbar-nav text-black" href="index.html">
-            THE CLOTHΞS</a>
->>>>>>> c0035feef5bd1f50f361abc613e391c6d40a671b:nolog/index.html
+        THECLOTHΞS</a>
             <a href="#" class="fa fa-facebook text-white bg-black"></a>
             <a href="#" class="fa fa-twitter text-white bg-black"></a>
             <a href="#" class="fa fa-instagram text-white bg-black"></a>
@@ -57,7 +52,7 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
       </nav>
       <div>
       <div class="text-center col-md-16 m-0 p-0 bg-black text-white" id="ah1">
-          <h2>BRAND NEW ARTICLES</h2>
+          <h2>BRAND NEW CLOTHES</h2>
       </div>
       <div id="demo" class="carousel slide text-center" data-ride="carousel">
 
@@ -69,19 +64,19 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
         </ul>
         
         <!-- The slideshow -->
-        <div class="carousel-inner" width="1100" height="400px">
-          <div class="carousel-item active">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Bring-Me-The-Horizon.jpg/800px-Bring-Me-The-Horizon.jpg" alt="Los Angeles">
-          <div id="cover" class="carousel-caption"><a id="car" href="#">Bring Me the Horizon's founding members came from diverse musical backgrounds within metal and rock. </a></div>
+        <div class="carousel-inner img-fluid cover align-top">
+          <div class="carousel-item active img-fluid top">
+            <img src="https://4kwallpapers.com/images/wallpapers/better-call-saul-bob-odenkirk-as-saul-goodman-season-6-2022-3840x2160-7849.jpg" alt="">
+          <div id="cover" class="carousel-caption"><a id="car" href="#">Wear it like Saul Goodman.</a></div>
           </div>
-          <div class="carousel-item">
-            <img src="http://www.monstermusic.cz/wp-content/uploads/2019/12/ghostemane-744610290-1000x584.jpeg" alt="Chicago">
-            <div id="cover" class="carousel-caption"><a id="car" href="#">American rapper, singer, and songwriter.</a></div>
+          <div class="carousel-item img-fluid">
+            <img src="https://4kwallpapers.com/images/wallpapers/better-call-saul-bob-odenkirk-as-saul-goodman-season-6-2022-3840x2160-7849.jpg" alt="">
+            <div id="cover" class="carousel-caption"><a id="car" href="#">Wear it like Saul Goodman.</a></div>
           
           </div>
-          <div class="carousel-item">
-            <img src="https://i.ytimg.com/vi/kBpdV076p-g/maxresdefault.jpg" alt="New York">
-            <div id="cover" class="carousel-caption"><a id="car" href="#">REDZED ALBUM OUT NOW!!</a></div>
+          <div class="carousel-item img-fluid">
+            <img src="https://4kwallpapers.com/images/wallpapers/better-call-saul-bob-odenkirk-as-saul-goodman-season-6-2022-3840x2160-7849.jpg" alt="">
+            <div id="cover" class="carousel-caption"><a id="car" href="#">Wear it like Saul Goodman.</a></div>
 
           </div>
         </div>
@@ -95,6 +90,93 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
         </a>
       </div>
       </div>
+      
+
+
+<div class="row bg-light text-center" style="padding:20px; margin: 0px;">
+<h2>BRAND NEW CLOTHES</h2>
+      <h4>From Category Breaking Bad/Better Call Saul</h4>
+      <br>  
+    <div class="col-md-3 col-sm-6 img-fluid center text-center" >
+
+        <div class="product-grid bg-white">
+            <div class="product-image img" >
+                <a href="#" class="image img-fluid" style="height: 350px;">
+                    <img style="width: 350px; height: 350px; object-fit: cover;" class="pic-1" src="https://pbs.twimg.com/media/FVm--5gXwAA6kKk?format=jpg&name=large">
+                    <img style="width: 350px; height: 350px; object-fit: cover;" class="pic-2" src="https://i1.wp.com/static1.moviewebimages.com/wordpress/wp-content/uploads/2022/06/Saul-Goodman.jpg?resize=780,470">
+                </a>
+                <ul class="product-links text-center ">
+                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content bg-white text-center">
+                <h3 class="title "><a href="#">Women's Blouse Top</a></h3>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid bg-white" >
+            <div class="product-image">
+                <a href="#" class="image img-fluid cover" style="height: 350px;">
+                    <img style="width: 350px; height: 350px; object-fit: cover;" class="pic-1" src="https://www.cnet.com/a/img/resize/834f528e6c39cb03896ec54924cef0c3ff639df4/hub/2019/08/24/00b360ed-3171-43e3-a834-6b05f7a7eccd/jesse-pinkman.jpg?auto=webp&fit=crop&height=1200&width=1200">
+                    <img style="width: 350px; height: 350px; object-fit: cover;" class="pic-2" src="https://pbs.twimg.com/media/FghsmZ_XEAADRqO?format=jpg&name=large">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content bg-white text-center">
+
+                <h3 class="title"><a href="#">Men's Jacket</a></h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid bg-white">
+            <div class="product-image bg-white">
+                <a href="#" class="image" style="height: 350px;">
+                    <img style="width: 350px; height: 350px; object-fit: cover;" class="pic-1" src="https://vader.news/__export/1616062179916/sites/gadgets/img/2021/03/18/gus-fring-better-call-saul.jpg_1188680388.jpg">
+                    <img style="width: 350px; height: 350px; object-fit: cover;" class="pic-2" src="https://i.insider.com/58c1a996dd08955a488b4a3c?width=700">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content bg-white text-center">
+                <h3 class="title"><a href="#">Women's Blouse Top</a></h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid bg-white">
+            <div class="product-image">
+                <a href="#" class="image" style="width: 350px; height: 350px; object-fit: cover;">
+                    <img style="width: 350px; height: 350px; object-fit: cover;" class="pic-1" src="https://www.tvguide.com/a/img/resize/e1d66796dcccb4a7d60dc6d6e47cbda5d9af90df/hub/2020/04/19/cdd0e1bb-73ca-4f8f-a671-8b56f45d95ba/bcs-509-nacho-news.jpg?auto=webp&fit=crop&height=1080&width=1920">
+                    <img style="width: 350px; height: 350px; object-fit: cover;" class="pic-2" src="https://images.squarespace-cdn.com/content/v1/551eb398e4b0b101cf722ed8/0af3f65d-8a83-4f0a-879b-0ed40ecfd4ad/Nacho-Varga2.png">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content bg-white text-center">
+                <h3 class="title"><a href="#">Men's Jacket</a></h3>
+            </div>
+        </div>
+    </div>
+</div>
       <!-- Footer -->
 <footer class="page-footer font-small teal pt-4 bg-white">
 
@@ -109,7 +191,7 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
 
         <!-- Content -->
         <h3 class="text-uppercase font-weight-bold">What we offer?</h3>
-        <p>Collection of song lyrics and musical knowledge.</p>
+        <p>Clothes of characters from the most famous movies and series.</p>
 
       </div>
       <!-- Grid column -->
@@ -119,18 +201,18 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
         <h3 class="text-uppercase font-weight-bold">contact us</h3>
         <div class="row">
           <div class="text-center col-sm">
-               <i class="fas fa-map-marker-alt mt-4 fa-2x"></i>
+            
                     <p>Teplice, CZ</p>
                 
           </div>
           <div class="text-center col-sm">
-                <i class="fas fa-phone mt-4 fa-2x"></i>
+            
                     <p>666 172 852</p>
                 
         </div>
         <div class="text-center col-sm">
-                <i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>theclothes</p>@seznam.cz</p>
+           
+                    <p>THECLOTHΞS@seznam.cz</p>
                 
         </div>
         </div>
@@ -152,6 +234,7 @@ nomodule>window.MSInputMethodContext && document.documentMode && document.write(
     <!-- Grid row -->
 
   </div>
+  
   <!-- Footer Text -->
 
   <!-- Copyright -->
