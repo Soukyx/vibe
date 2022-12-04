@@ -78,8 +78,8 @@ if (isset($_GET['search'])) {
 
 ?>
 
-  <div class="container col-md-6">
-    <div id="card3" class="col-md-6 float-left">
+  <div class="container col-md-12">
+    <div id="card3" class="col-md-12 float-left">
       <div class="text-center">
         <h4 class="title">Searched results for "<?php echo $s; ?>".</h4>
 
@@ -111,15 +111,46 @@ if (isset($_GET['search'])) {
                 <hr>
                 <br>
                 
-                <br>
-                <div class='info'>
-                  <p class="inf">Name: <?php echo $user_data['username']; ?></p>
-                </div>
-                <div class='info'>
-                  <p class="inf">Email: <?php echo $user_data['email']; ?></p>
-                </div>
-                <br>
-                <hr>
+                <div class="row container d-flex justify-content-center">
+<div class="col-xl-6 col-md-12">
+                                                <div class="card user-card-full">
+                                                    <div class="row m-l-0 m-r-0">
+                                                        <div class="col-sm-4 bg-white user-profile">
+                                                            <div class="card-block text-center text-white">
+                                                                <h6 class="f-w-600 text-black"><?php echo $user_data['username']; ?></h6>
+                                                                <p class="text-black"><?php echo $user_data['usertype']; ?></p>
+                                                                <i class="text-black mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-8 bg-light">
+                                                            <div class="card-block">
+                                                                <h6 class="m-b-20 p-b-5 b-b-default f-w-600 text-black">Information</h6>
+                                                                <div class="row">
+                                                                    <div class="col-sm-6">
+                                                                        <p class="m-b-10 f-w-600">Email</p>
+                                                                        <h6 class="f-w-400"><?php echo $user_data['email']; ?></h6>
+                                                                    </div>
+                                                                    <div class="col-sm-6">
+                                                                        <p class="m-b-10 f-w-600">Phone</p>
+                                                                        <h6 class="f-w-400">98979989898</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Address</h6>
+                                                                <div class="row">
+                                                                    <div class="col-sm-6">
+                                                                        <p class="m-b-10 f-w-600">Recent</p>
+                                                                        <h6 class="f-w-400">Sam Disuja</h6>
+                                                                    </div>
+                                                                    <div class="col-sm-6">
+                                                                        <p class="m-b-10 f-w-600">Most Viewed</p>
+                                                                        <h6 class=" f-w-400">Dinoter husainm</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <br>
+         
+                                                            </div>
+                                                        </div>
+                                                    </div>
               
               <br>
             </div>
@@ -188,6 +219,7 @@ if (isset($_GET['search'])) {
       </div>
 
     </div>
+    
 </section>
 
 
